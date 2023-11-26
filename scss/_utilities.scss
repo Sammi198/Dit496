@@ -1,0 +1,68 @@
+//color
+$pcolor: #eb7966;
+$scolor: #f4c9c2;
+$bgcolor: #f9ebea;
+$whitecolor: #fff;
+$bkcolor: #11184f;
+//Font Weight
+$fontWSN: 400;
+$fontWND: 600;
+$fontWXL: 700;
+
+body,
+p{
+  font{
+    font: 16px;
+    font-weight: $fontWSN;
+  }
+}
+p{
+  margin: 0 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: $fontWND;
+  margin: 0 0 15px;
+  line-height: 1.2em;
+}
+
+//padding
+$paddingsn: 10px 0;
+
+//Main width
+$small: 200px;
+$medium: 767px;
+.container{
+  width: 1400px;
+  margin: auto;
+  @media only screen and (min-width:$small)and(max-width:$medium) {width: 96%;
+    
+  }
+}
+
+//social Area style
+.social_area
+  ul{
+    text-align: right;
+    li{
+      margin-left: 15px;
+    }
+    a{
+      display: block;
+      background: $scolor;
+      width: 40px;
+      height: 40px;
+      font-size: 15px;
+      color: $bkcolor;
+      text-align: center;
+      padding-top: 8px;
+      border-radius: 30px;
+      i{
+        margin: 0;
+      }
+  }
+}

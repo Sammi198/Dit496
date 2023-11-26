@@ -1,0 +1,46 @@
+#header_area{
+  //top header area style
+  .top_header_area{
+    background: color( red );
+    padding: $paddingsn;
+    p{
+      font{
+        size: 14px;
+        font-weight: $fontWND;
+      }
+      i{
+        display: inline-block;
+        margin-right: 8px;
+      }
+      color: #eb7966;
+      margin: 8px 0 0;
+    }
+    }
+  }
+  //main header area style
+  .main_header{
+    background: $whitecolor;
+    padding: 25px;
+  }
+  .logo_area{
+    flex-basis: 30%;
+  }
+  .main_menu{
+    flex-basis: 70%;
+    ul{
+      text-align: right;
+      display: flex;
+      justify-content: end;
+      li{
+        margin-left: 25px;
+        a{
+          color: blue;
+          font{
+            size: 16px;
+            font-weight: $fontWND;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width:$small)and(max-width:$medium) {width: 96%;}
+  }
